@@ -1,0 +1,463 @@
+/* Common Stle */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family:'Jost', sans-serif ;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* EndCommon Stle */
+
+/* Section 1 */
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, .3)), url(./images/bg.jpg) center no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    
+
+}
+.section-1-heading{
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    background: #e41c6f;
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: .3rem solid white;
+    text-shadow: .2rem .2rem .1rem #555;
+    transform: skew(-10deg);
+}
+.person-img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: .4rem dotted #e41c6f;
+    /* background-color: rgba(255, 255, 255, .7); */
+    /* padding: .5rem ; */
+    opacity: .9;
+}
+.person-name{
+    font-size: 2rem;
+    color: white;
+    background-color: #e41c6f;
+    margin: 5rem 0;
+    padding: .5rem 3rem;
+    letter-spacing: .3rem;
+    transform: skew(-10deg);
+}
+.section-1-btn{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #333;
+    background-color: white;
+    border: .3rem solid #333;
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+/* End Section 1 */
+
+
+/* NAvbAR */
+
+.navbar{
+    width: 100%;
+    height: 6rem;
+    background-color: #e41c6f;
+    box-shadow: .2rem .2rem .5rem #555;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-link{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color .2s;
+}
+.change.navbar-link{
+    color: white;
+}
+.navbar-link:hover{
+    color: white;
+}
+
+.navbar-link::before{
+    content: '';
+    width: 0;
+    height: .2rem;
+    background-color: white;
+    position: absolute;
+    right: -15%;
+    bottom: -.3rem;
+    transition: width .2s;
+}
+.change.navbar-link::before{
+    width: 130%;
+}
+.navbar-link:hover::before{
+    width: 130%;
+}
+
+/* End NAvbAR */
+
+
+/* Section 2 */
+.section-2{
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 10rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section-2-heading{
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid #333;
+    text-shadow: .2rem .2rem .5rem #555;
+}
+.progress-bar-wrapper{
+    margin-bottom: 10rem;
+}
+.progress-bar{
+    width: 60rem;
+    height: 3rem;
+    background-color: #ccc;
+    margin: 1.5rem 0;
+    border-radius: .3rem;
+    box-shadow: .2rem .2rem 1rem #555;
+    position: relative;
+
+}
+.progress-text{
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.progress-text span{
+    margin: 0 .5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.progress-percent{
+    width: 0;
+    height: 100%;
+    background-color: #e41c6f;
+    border-radius: .3rem;
+    transition: width 1s .5s ease-in-out;
+}
+
+.services{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service{
+    text-align: center;
+}
+.service:first-child,
+.service:last-child{
+    align-self: flex-start;
+}
+.service i{
+    font-size: 10rem;
+    color: #888;
+    margin-bottom: 2rem;
+    text-shadow: .1rem .1rem .5rem #555;
+}
+.service h2{
+    font-size: 2rem;
+    color: white;
+    background-color: #777;
+    width: 25rem;
+    letter-spacing: .3rem;
+    transform: skew(-10deg);
+    box-shadow: .2rem .2rem .5rem #555;
+}
+
+/* END Section 2 */
+
+
+/*  Section 3 */
+
+.section-3{
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: #eef;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.section-3-heading{
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid #333;
+    text-shadow: .2rem .2rem .5rem #555;
+}
+
+.projects-wrapper{
+    width: 80%;
+    flex-wrap: wrap;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: .3rem .3rem .5rem #777,
+   -.3rem -.3rem .5rem #777;
+   position: relative;
+   overflow: hidden;
+   transition: box-shadow .5s;
+}
+.project:hover{
+    box-shadow: 1rem 1rem 1rem #777,
+    -.6rem -.6rem 1rem #777;
+}
+
+.project-text{
+    text-align: center;
+    letter-spacing: .1rem;
+    position: absolute;
+    top: -10rem;
+    transition: top .3s;
+}
+
+.project:hover .project-text{
+    top: 5rem;
+    transition: top .3s .3s;
+}
+.project-name{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+}
+.project-technology{
+    font-size: 1.8re,;
+    color: #e41c6f;
+}
+.project-img{
+    width: 40rem;
+    transition: opacity .3s;
+}
+.project:hover .project-img{
+    opacity: .2;
+}
+.project-link{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: .1rem;
+    border: .3rem solid #e41c6f;
+    padding: 0 1rem;
+    background-color: white;
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom .3s;
+}
+.project:hover .project-link{
+    bottom: 5rem;
+    transition: bottom .3s .3s;
+
+}
+
+/* END Section 3 */
+
+
+/*  Section 4 */
+.section-4{
+    width: 100%;
+    height: 70vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-4-heading{
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 5rem;
+    border-bottom: .3rem solid white;
+    text-shadow: .2rem .2rem .5rem #555;
+}
+
+.contact-form{
+    width: 50rem;
+    flex-direction: column;
+}
+ .contact-form input,
+ .contact-form textarea{
+     width: 100%;
+     padding: .5rem;
+     margin: .5rem 0;
+     background-color: #eef;
+     font-size: 1.5rem;
+     border: .2rem solid #e41c6f;
+     color: #555;
+ }
+ .contact-form textarea{
+     height: 10rem;
+     max-height: 100%;
+     max-height: 15rem;
+ }
+ .contact-form .contact-btn{
+    background-color: #e41c6f;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    cursor: pointer;
+    
+ }
+
+/* END Section 4 */
+
+
+/*  Section 5 */
+
+.section-5{
+    width: 100%;
+    height: 30vh;
+    background: #222;
+    flex-direction: column;
+}
+.social-media{
+    margin-bottom: 5rem;
+}
+
+.social-media-link{
+    margin: 0 2rem;
+    padding: .7rem;
+    background: #e41c6f;
+    border-radius: .5rem;
+    display: inline-block;
+}
+.social-media-link i{
+    font-size: 3rem;
+    color: white;
+}
+.copyright{
+    color: #aaa;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* END Section 5 */
+
+
+/* RESPONSIVE */
+@media screen and (max-width:1200px) {
+   .services{
+       height: auto;
+       flex-wrap: wrap;
+   }
+   .service{
+       margin: 3rem 2rem;
+   }
+   .section-4{
+       height: 80vh;
+   }
+}
+@media screen and (max-width:800px) {
+   .section-1-heading{
+       font-size: 4rem;
+   }
+   .progress-bar{
+       width: 50rem;
+   }
+}
+@media screen and (max-width:600px) {
+   .section-1-heading{
+       font-size: 3rem;
+   }
+   .navbar-link{
+       margin: 0 2rem;
+       font-size: 1.5rem;
+   }
+   .section-2{
+       padding: 10rem;
+   }
+   .section-2{
+       margin-bottom: 10rem;
+   }
+   .progress-bar{
+       width: 45rem;
+   }
+   .project-img{
+       width: 100%;
+   }
+   .contact-form{
+       width: 40rem;
+   }
+   .copyright{
+       width: 70%;
+   }
+}
+
+@media screen and (max-width:500px){
+html{
+    font-size: 55%;
+}
+}
+@media screen and (max-width:450px){
+html{
+    font-size: 45%;
+}
+.section-1-heading{
+    font-size: 2.5rem;
+}
+.navbar-link{
+    margin: 0 1.5rem;
+}
+.section-2-heading{
+    text-align: center;
+    font-size: 4rem;
+}
+.progress-bar{
+    width: 40rem;
+}
+}
